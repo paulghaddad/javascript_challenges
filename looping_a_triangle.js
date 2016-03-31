@@ -19,8 +19,7 @@ for (var i = 1; i <= levels; i++)
 
 // Solution 2
 
-var levels = 7;
-var block = "#"
+var triangleLayers = 7;
 
-for (var i = 1; i <= levels; i++)
-  console.log(block += "#");
+for (var layer = "#"; layer.length <= triangleLayers; layer += "#")
+  console.log(layer);
