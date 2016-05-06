@@ -20,7 +20,7 @@ function arrayToList(values) {
 function listToArray(list) {
   var array = [];
 
-  for (var node = list; list; list = list.rest)
+  for (var node = list; !!list; list = list.rest)
     array.push(node.value);
 
   return array;
